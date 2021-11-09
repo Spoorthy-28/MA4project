@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.mindtree.utilities.Listener"/>
+    <listener class-name="com.mindtree.utilities.ExtentReporterNG"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.mindtree.runner.TideApplication">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="getBrowser"/>
+          <include name="validateLaundrySymbolsText"/>
+        </methods>
+      </class> <!-- com.mindtree.runner.TideApplication -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
